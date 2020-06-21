@@ -213,10 +213,10 @@ def log_result():
     winner = scoreboard[0]
     losers = ' and '.join(scoreboard[1:])
     stat_str = """
-    *Session wins:* {}
+*Session wins:* {}
 
-    *All Time Points:*
-    {}
+*All Time Points:*
+{}
     """.format(get_wins(this_sessions_games()), 
                pretty_print(summarize(app.history['games'])))
 
